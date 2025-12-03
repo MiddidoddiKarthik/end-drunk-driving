@@ -1,0 +1,294 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Fight to End Drunk Driving. Join the Movement.</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom colors based on brand identity */
+        :root {
+            --color-primary: #0A3D62; /* Deep Blue (Authority) */
+            --color-secondary: #334155; /* Strong Gray (Foundation) */
+            --color-accent: #FFB300; /* Amber/Gold (Hope/Warning) */
+            --color-light: #F8FAFC;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-light);
+        }
+
+        /* Utility classes for custom colors */
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .text-accent { color: var(--color-accent); }
+
+        /* Hero image styling */
+        .hero-section {
+            background: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.7)), url('https://placehold.co/1200x800/0A3D62/FFFFFF?text=Compassion+%26+Action');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary">DRIVE <span class="text-accent">SURE</span></h1>
+            <nav class="hidden md:block space-x-8 text-sm font-semibold">
+                <a href="#support" class="hover:text-primary transition">Support</a>
+                <a href="#policy" class="hover:text-primary transition">Policy</a>
+                <a href="#data" class="hover:text-primary transition">Prevention</a>
+                <a href="#involved" class="hover:text-primary transition">Get Involved</a>
+            </nav>
+            <button class="md:hidden text-primary">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Homepage: The Call to Action (Hero Section) -->
+        <section class="hero-section text-white py-20 md:py-32 rounded-b-2xl shadow-xl">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <!-- Main Headline -->
+                <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    We Fight to End Drunk Driving. <span class="text-accent">Join the Movement.</span>
+                </h2>
+                <!-- Sub-Headline -->
+                <p class="text-xl sm:text-2xl font-light mb-10 max-w-3xl mx-auto">
+                    Every life lost is 100% preventable. Find support, take action, and save lives.
+                </p>
+                <!-- Primary CTA Block -->
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#support" class="bg-accent hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                        <i data-lucide="heart" class="w-5 h-5 mr-2"></i> I Need Help Now
+                    </a>
+                    <a href="#involved" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                        <i data-lucide="check-circle" class="w-5 h-5 mr-2"></i> Take the Pledge
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Pillars Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-primary mb-12">Our Three Pillars of Change</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pillar 1: Victim Support -->
+                    <div class="p-6 bg-light rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <i data-lucide="hand-heart" class="w-10 h-10 text-accent mb-4"></i>
+                        <h4 class="text-xl font-semibold text-primary mb-3">Victim Support</h4>
+                        <p class="text-gray-600">Providing compassionate, private, and professional support to survivors and families affected by impaired driving.</p>
+                        <a href="#support" class="mt-4 inline-block text-sm font-semibold text-primary hover:text-accent">Find Support &rarr;</a>
+                    </div>
+                    <!-- Pillar 2: Legislation -->
+                    <div class="p-6 bg-light rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <i data-lucide="gavel" class="w-10 h-10 text-primary mb-4"></i>
+                        <h4 class="text-xl font-semibold text-primary mb-3">Legislation & Policy</h4>
+                        <p class="text-gray-600">Driving systemic change through advocacy for stronger interlock laws, lower BAC limits, and enhanced penalties.</p>
+                        <a href="#policy" class="mt-4 inline-block text-sm font-semibold text-primary hover:text-accent">See Our Platform &rarr;</a>
+                    </div>
+                    <!-- Pillar 3: Community Action -->
+                    <div class="p-6 bg-light rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-secondary">
+                        <i data-lucide="users" class="w-10 h-10 text-secondary mb-4"></i>
+                        <h4 class="text-xl font-semibold text-primary mb-3">Community Action</h4>
+                        <p class="text-gray-600">Empowering local chapters and volunteers to educate, monitor, and host events that promote sober driving.</p>
+                        <a href="#involved" class="mt-4 inline-block text-sm font-semibold text-primary hover:text-accent">Get Involved &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Impact Stat Block -->
+        <section class="bg-primary text-white py-12">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-4xl sm:text-6xl font-extrabold text-accent mb-2">13,384</p>
+                <p class="text-xl sm:text-2xl font-semibold">people died in alcohol-impaired driving crashes in 2021.</p>
+                <p class="mt-4 text-sm font-light italic">This is not just a number. This is our reason to fight.</p>
+            </div>
+        </section>
+
+        <!-- 2. Victim & Survivor Services -->
+        <section id="support" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-primary mb-4 text-center">
+                    Compassionate Support for Every Step of the Journey
+                </h2>
+                <p class="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    You do not have to face this alone. We provide immediate, private, and confidential assistance.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- 24/7 Helpline -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-l-4 border-accent">
+                        <i data-lucide="phone-call" class="w-8 h-8 text-accent mb-3"></i>
+                        <h3 class="text-2xl font-bold text-primary mb-4">24/7 National Helpline</h3>
+                        <p class="text-gray-700 mb-4">Immediate, emotional support and guidance is available around the clock. Your call is confidential.</p>
+                        <a href="tel:1-800-555-SAFE" class="text-3xl font-extrabold text-accent block mb-4 hover:underline">1-800-555-SAFE</a>
+                        <p class="text-sm text-gray-500">Call now or fill out the form below for a confidential response within the hour.</p>
+                    </div>
+
+                    <!-- Grief & Trauma Resources -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-l-4 border-primary">
+                        <i data-lucide="message-square" class="w-8 h-8 text-primary mb-3"></i>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Grief & Trauma Resources</h3>
+                        <p class="text-gray-700">We connect you with professional, licensed counseling services and local peer support groups who understand your journey toward healing.</p>
+                        <ul class="mt-4 space-y-2 text-gray-600 list-disc list-inside">
+                            <li>Professional Therapist Network</li>
+                            <li>Peer Support Groups (Local & Virtual)</li>
+                            <li>Trauma-Informed Care Referrals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-10 p-8 bg-white rounded-xl shadow-xl border-t-4 border-secondary">
+                    <i data-lucide="scale" class="w-8 h-8 text-secondary mb-3"></i>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Victim Rights & Legal Guidance</h3>
+                    <p class="text-gray-700 max-w-4xl">Understand your rights in the legal system. We provide non-legal state-specific information on victim impact statements, rights during prosecution, and court advocacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Policy & Legislation -->
+        <section id="policy" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-secondary mb-4 text-center">
+                    Driving Change: Policy Solutions
+                </h2>
+                <p class="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    We champion common-sense, evidence-based legislative measures that stop repeat offenders and save thousands of lives annually.
+                </p>
+
+                <div class="space-y-12">
+                    <!-- Policy 1: Ignition Interlocks -->
+                    <div class="flex flex-col md:flex-row items-start bg-gray-50 p-6 rounded-xl shadow-lg">
+                        <i data-lucide="car" class="w-12 h-12 text-accent mr-6 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">All-Offender Ignition Interlocks</h3>
+                            <p class="text-gray-700">These devices, which prevent a vehicle from starting if the driver has been drinking, are the most effective tool for preventing recidivism. We advocate for mandatory interlocks for *all* convicted drunk drivers, including first-time offenders.</p>
+                        </div>
+                    </div>
+                    <!-- Policy 2: BAC Limits -->
+                    <div class="flex flex-col md:flex-row items-start bg-gray-50 p-6 rounded-xl shadow-lg">
+                        <i data-lucide="gauge" class="w-12 h-12 text-accent mr-6 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Lowering the Legal BAC Limit</h3>
+                            <p class="text-gray-700">We push for lowering the legal Blood Alcohol Concentration (BAC) limit to $0.05 \text{ g/dL}$. Impairment begins long before $0.08\%$. Adopting a lower limit addresses impairment earlier, aligning the law with the science of safe driving.</p>
+                        </div>
+                    </div>
+                    <!-- Policy 3: Repeat Offender Laws -->
+                    <div class="flex flex-col md:flex-row items-start bg-gray-50 p-6 rounded-xl shadow-lg">
+                        <i data-lucide="lock" class="w-12 h-12 text-accent mr-6 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Mandatory Sentencing for Repeat Offenders</h3>
+                            <p class="text-gray-700">Chronic drunk drivers pose an extreme risk. We advocate for mandatory, enhanced penalties, including longer sentences and intensified supervision, to ensure public safety and accountability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA: Contact Legislator -->
+                <div class="mt-12 text-center">
+                    <a href="#" class="bg-primary hover:bg-secondary text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-flex items-center">
+                        <i data-lucide="send" class="w-5 h-5 mr-3"></i> Contact Your Legislator
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">Use our tool to quickly find and contact your local representative about pending DUI laws.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Facts, Data, & Prevention -->
+        <section id="data" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-primary mb-4 text-center">
+                    Facts, Data, & Prevention
+                </h2>
+                <p class="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Knowledge is power. Understand the science of impairment and plan ahead for a safe ride home.
+                </p>
+
+                <!-- Impairment Explained -->
+                <div class="bg-white p-8 rounded-xl shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold text-primary mb-4 border-b pb-2">Impairment Explained</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="p-4 bg-red-50 rounded-lg">
+                            <p class="text-3xl font-extrabold text-red-600">0.02% BAC</p>
+                            <p class="text-sm text-gray-600 font-semibold">Loss of judgment, decline in visual function.</p>
+                        </div>
+                        <div class="p-4 bg-orange-50 rounded-lg">
+                            <p class="text-3xl font-extrabold text-orange-600">0.05% BAC</p>
+                            <p class="text-sm text-gray-600 font-semibold">Reduced coordination, difficulty steering, less inhibited.</p>
+                        </div>
+                        <div class="p-4 bg-red-100 rounded-lg">
+                            <p class="text-3xl font-extrabold text-red-700">0.08% BAC (Legal Limit)</p>
+                            <p class="text-sm text-gray-600 font-semibold">Major loss of muscle control, slowed reaction time, difficulty processing information.</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-sm italic text-gray-500 text-center">Impairment begins with the first drink. Never take chances.</p>
+                </div>
+
+                <!-- Prevention Checklist -->
+                <div class="bg-white p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-primary mb-4 border-b pb-2">Prevention Checklist: Get Home Safe</h3>
+                    <ul class="space-y-4 text-gray-700 text-lg">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-6 h-6 text-primary mr-3 flex-shrink-0"></i> **Designated Drivers:** Secure a sober driver BEFORE you go out.</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-6 h-6 text-primary mr-3 flex-shrink-0"></i> **Ride-Share/Taxi:** Download and use apps like Uber or Lyft, or keep local taxi numbers ready.</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-6 h-6 text-primary mr-3 flex-shrink-0"></i> **Public Transit:** Plan your bus or train route and schedule in advance.</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-6 h-6 text-primary mr-3 flex-shrink-0"></i> **Host Responsibility:** If hosting, offer non-alcoholic options and ensure every guest has a safe way home.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Get Involved -->
+        <section id="involved" class="py-20 bg-primary text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-accent mb-4 text-center">
+                    Be the Solution. Get Involved.
+                </h2>
+                <p class="text-lg text-center font-light mb-12 max-w-3xl mx-auto">
+                    Your time, voice, and resources fuel the fight for a future free from impaired driving deaths.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Donate -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:scale-[1.02]">
+                        <i data-lucide="wallet" class="w-8 h-8 text-primary mb-3"></i>
+                        <h3 class="text-2xl font-bold mb-3">Donate</h3>
+                        <p class="text-gray-600 mb-4">Your donation directly funds 24/7 victim services and supports critical legislative advocacy work.</p>
+                        <a href="#" class="bg-accent hover:bg-yellow-600 text-gray-900 font-bold py-2 px-6 rounded-full text-sm inline-block">Secure Donation</a>
+                    </div>
+                    <!-- Volunteer -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:scale-[1.02]">
+                        <i data-lucide="megaphone" class="w-8 h-8 text-primary mb-3"></i>
+                        <h3 class="text-2xl font-bold mb-3">Volunteer</h3>
+                        <p class="text-gray-600 mb-4">Join your local chapter! Opportunities include court monitoring, awareness events, and peer support programs.</p>
+                        <a href="#" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-6 rounded-full text-sm inline-block">Find a Local Chapter</a>
+                    </div>
+                    <!-- Corporate Partnerships -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:scale-[1.02]">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-primary mb-3"></i>
+                        <h3 class="text-2xl font-bold mb-3">Corporate Partnerships</h3>
+                        <p class="text-gray-600 mb-4">Partner with us to champion sober driving initiatives and enhance your commitment to community safety.</p>
+                        <a href="#" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-6 rounded-full text-sm inline-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 DRIVE SURE. Fighting to end impaired driving. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-accent transition">Privacy Policy</a>
+                <a href="#" clas
